@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 cases by Country</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="jqueryUi1.12.1.Custom/jqueryUi.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>COVID-19 cases by country</h1>
+        </div>
+        <div class="wrapper">
+            <form action="#" method="#" name="form" class="ui-widget">
+                <label for="userInput" class="srOnly">Search By Country</label>
+                <input type="text" class="countryName" id="userInput" name="countryField"
+                    placeholder="Search By Country">
+                <button class="submitUserCountry" id="submit" type="submit">Submit</button>
+            </form>
+            <div class="errorM wrapper">
+                <div class="errorMessages">
+                </div>
+            </div>
+    </header>
+    <main class="wrapper">
+        <section class="data">
+        </section>
+        <section class="detailsProvinces">
+        </section>
+    </main>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
+        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+
+
+    <script src="jqueryUi1.12.1.Custom/external/jquery/jquery.js"></script>
+    <script src="jqueryUi1.12.1.Custom/jqueryUi.js"></script>
+
+</html>
