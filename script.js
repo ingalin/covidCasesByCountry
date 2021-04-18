@@ -157,16 +157,16 @@ app.chartIt = function () {
     },
     options: {
       tooltips: {
-        titleFontSize: 20,
-        bodyFontSize: 20
+        titleFontSize: 16,
+        bodyFontSize: 16
       },
       responsive: false,
       maintainAspectRatio: true,
       legend: {
         labels: {
-          fontSize: 25,
-          padding: 20,
-          fontColor: '#f8f7fc'
+          fontSize: 16,
+          padding: 10,
+          fontColor: '#f8f7fc',
         }
       },
       scales: {
@@ -177,13 +177,13 @@ app.chartIt = function () {
           ticks: {
             display: false,
             beginAtZero: true,
-            fontSize: 20
+            fontSize: 16
           }
         }],
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontSize: 20,
+            fontSize: 16,
             fontColor: '#f8f7fc',
             padding: 10
           }
@@ -202,7 +202,7 @@ app.chartItNewCases = function () {
       labels: dateConfirmedX,
       datasets: [
         {
-          label: '# of New Confirmed Cases',
+          label: 'New Confirmed Cases',
           data: newConfirmed,
           fill: false,
           borderColor:
@@ -214,16 +214,16 @@ app.chartItNewCases = function () {
     },
     options: {
       tooltips: {
-        titleFontSize: 20,
-        bodyFontSize: 20
+        titleFontSize: 16,
+        bodyFontSize: 16
       },
       responsive: false,
       maintainAspectRatio: true,
       legend: {
         labels: {
-          fontSize: 25,
-          padding: 20,
-          fontColor: '#f8f7fc'
+          fontSize: 16,
+          padding: 10,
+          fontColor: '#f8f7fc',
         }
       },
       scales: {
@@ -234,13 +234,13 @@ app.chartItNewCases = function () {
           ticks: {
             display: false,
             beginAtZero: true,
-            fontSize: 20
+            fontSize: 16
           }
         }],
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontSize: 20,
+            fontSize: 16,
             fontColor: '#f8f7fc',
             padding: 10
           }

@@ -218,3 +218,11 @@ form.ui-widget button:hover, form.ui-widget button:focus {
     background: #772d19;
 }
 
+/* Media Queries */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
