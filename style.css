@@ -226,3 +226,23 @@ form.ui-widget button:hover, form.ui-widget button:focus {
   }
 }
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  form.ui-widget input[type=text]{
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+
+  form.ui-widget button {
+    padding: 5px;
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+}
+

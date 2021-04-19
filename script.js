@@ -37,6 +37,7 @@ let countries = [];
 
 let casesConfirmedY = [];
 let dateConfirmedX = [];
+let dateConfirmedXLabel = [];
 let casesRecoveredY = [];
 let casesDeathsY = [];
 let casesActiveY = [];
@@ -116,7 +117,7 @@ app.chartIt = function () {
   window.line = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: dateConfirmedX,
+      labels: dateConfirmedXLabel,
       datasets: [{
         label: '# of Confirmed Cases',
         data: casesConfirmedY,
@@ -199,7 +200,7 @@ app.chartItNewCases = function () {
   ctx2 = new Chart(ctx2, {
     type: 'bar',
     data: {
-      labels: dateConfirmedX,
+      labels: dateConfirmedXLabel,
       datasets: [
         {
           label: 'New Confirmed Cases',
@@ -342,11 +343,13 @@ app.cuntriesStatus = function (countrySlug) {
     }
     casesConfirmedY = []
     dateConfirmedX = []
+    dateConfirmedXLabel=[]
     casesRecoveredY = []
     casesDeathsY = []
     casesActiveY = []
     for (let n = 0; n < $(response1).length; n++) {
-      dateConfirmedX.push((response1[n].Date).substring(0, 10));
+      dateConfirmedX.push((response1[n].Date));
+      dateConfirmedXLabel.push((response1[n].Date).substring(0, 10));
       casesConfirmedY.push(response1[n].Confirmed);
       casesRecoveredY.push(response1[n].Recovered);
       casesDeathsY.push(response1[n].Deaths);
